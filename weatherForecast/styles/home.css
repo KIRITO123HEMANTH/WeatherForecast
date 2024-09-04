@@ -1,0 +1,161 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+.button {
+    cursor: pointer;
+}
+.home {
+    padding: 10px;
+}
+.home > .content {
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+padding: 8px;
+}
+.home > .content > .title {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+.home > .content > .search {
+    display: flex;
+    position: relative;
+}
+.home > .content > .search > input {
+    width: 200px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.home > .content > .search > input::placeholder {
+    font-size: 13px;
+}
+.home > .content > .search > .button {
+    margin-left: 8px;
+    line-height: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    opacity: 1;
+}
+.home > .content > .search > .button.locked {
+    opacity: 0.3;
+}
+.home > .content > .search > .box {
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+    background-color: #eeeeee;
+    padding: 8px 8px 8px 16px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: none;
+    min-width: 200px;
+}
+.home > .content > .search > .box > ul > li {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.home > .content > .search > .box > ul > li:not(:last-child) {
+    border-bottom: 1px solid #111111;
+}
+.home > .content > .search > .box > ul > li > .city {
+    float: left;
+    margin-right: 16px;
+}
+.home > .content > .search > .box > ul > li > .country {
+    float: right;
+    font-size: 12px;
+    color: #333333;
+    line-height: 18px;
+}
+.home > .content > .date {
+    margin-top: 32px;
+    font-size: 24px;
+}
+.home > .content > .tempToday {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+.home > .content > .tempToday > div {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+.home > .content > .tempToday > .temperature {
+    display: flex;
+    margin-right: 16px;
+}
+.home > .content > .tempToday > .temperature > .amount {
+    font-size: 24px;
+}
+.home > .content > .tempToday > .temperature > .amount > .highest {
+    color: #ff0000;
+}
+.home > .content > .tempToday > .temperature > .amount > .lowest {
+    color: #1818ff;
+}
+.home > .content > .tempToday > .temperature > .degree {
+    font-size: 24px;
+    margin-left: 8px;
+}
+.home > .content > .tempToday > .temperature > .unit {
+    font-size: 48px;
+}
+.home > .content > .tempToday > .cityName {
+    line-height: 48px;
+    font-size: 40px;
+}
+.home > .content > .daysOverview {
+    margin-top: 32px;
+    display: none;
+}
+.home > .content > .daysOverview > .title {
+    font-size: 24px;
+}
+.home > .content > .daysOverview > .details {
+    overflow-x: auto;
+    display: flex;
+    padding: 8px;
+}
+.home > .content > .daysOverview > .details > .day {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 8px;
+}
+.home > .content > .daysOverview > .details > .day:not(:last-child) {
+    margin-right: 16px;
+}
+.home > .content > .daysOverview > .details > .day > .weekDay {
+    text-align: center;
+    margin-bottom: 8px;
+}
+.home > .content > .daysOverview > .details > .day > .temperature {
+    display: flex;
+}
+.home > .content > .daysOverview > .details > .day > .temperature > .amount {
+    font-size: 24px;
+}
+.home > .content > .daysOverview > .details > .day > .temperature > .amount > .highest {
+    color: #ff0000;
+}
+.home > .content > .daysOverview > .details > .day > .temperature > .amount > .lowest {
+    color: #1818ff;
+}
+.home > .content > .daysOverview > .details > .day > .temperature > .degree {
+    font-size: 24px;
+    margin-left: 8px;
+}
+.home > .content > .daysOverview > .details > .day > .temperature > .unit {
+    font-size: 48px;
+}
